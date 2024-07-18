@@ -1,11 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import { useAuth } from "../context/auth-context";
 import Cookies from "js-cookie";
 const Home = () => {
   const { logout } = useAuth();
+  const navigate = useNavigate();
   const HandleLogout = async () => {
     try {
       await logout();
       Cookies.remove("user");
+      navigate("/login");
     } catch (error) {
       alert(error);
     }
