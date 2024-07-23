@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
-import "./App.css";
 import SignupPage from "./pages/SignupPage";
 import LoginPage from "./pages/LoginPage";
 import HomePage from "./pages/HomePage";
 import ProtectedRoute from "./components/ProtectedRoute";
+import "./App.css";
 
 function App() {
   return (
