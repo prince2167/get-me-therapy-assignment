@@ -163,7 +163,7 @@ const Signup = () => {
         </button>
         <p className="text-center text-sm mt-4 font-semibold">
           Have an account?{" "}
-          <a href="./Login" className="text-[#FE8C00]">
+          <a href="/Login" className="text-[#FE8C00]">
             Sign In
           </a>{" "}
         </p>
