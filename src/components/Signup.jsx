@@ -5,7 +5,7 @@ import { useState } from "react";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import google from "../assets/google.svg";
 import { useAuth } from "../context/auth-context";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const schema = z.object({
   email: z.string().email({ message: "Invalid email address" }),
@@ -163,9 +163,9 @@ const Signup = () => {
         </button>
         <p className="text-center text-sm mt-4 font-semibold">
           Have an account?{" "}
-          <a href="/login" className="text-[#FE8C00]">
+          <Link to="/login" className="text-[#FE8C00]">
             Sign In
-          </a>{" "}
+          </Link>{" "}
         </p>
       </div>
     </div>
