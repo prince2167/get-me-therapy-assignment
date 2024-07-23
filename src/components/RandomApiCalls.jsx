@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Spinner from "./Spinner";
+import Loader from "./Loader";
 
 const URL = "https://jsonplaceholder.typicode.com/comments";
 const RandomApiCalls = () => {
@@ -32,7 +32,7 @@ const RandomApiCalls = () => {
     return () => clearInterval(interval);
   }, []);
 
-  if (loading) return <Spinner />;
+  if (loading) return <Loader />;
   return (
     <div>
       {error && <p>Error: {error}</p>}
